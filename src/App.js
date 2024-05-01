@@ -1,19 +1,46 @@
 // import Add from "./components/Add";
 // import Greetings from "./components/Greetings";
 
-const myName='Mustapha WebDev';
-const multiply =(a,b)=>a*b;
-const specialClass='simple-class';
+// const myName='Mustapha WebDev';
+// const multiply =(a,b)=>a*b;
+// const specialClass='simple-class';
 
 function App() {
+  //example 1 for map();
+
+  // const number =[1,2,3,4,5];
+
+  //example2 map 
+  const userInfo = [
+    { name: 'Musty', email:'m@gma.com', location:'usa'},
+    { name: 'Maaz', email:'maaz@gma.com', location:'canada'},
+    { name: 'fuad', email:'fuad@gma.com', location:'Sweden'}
+  ];
+  
+  const userList = userInfo.map(userInfo => (
+    <li key={Math.random() * 10}><>{userInfo.name} <br/> {userInfo.email}<br/> {userInfo.location}</></li>
+  ));
   return (
-    <>
-    <h1>Welcome, I am {myName}</h1>
-    <p>2*2 = {2*2}</p>
-    <p>My Friends List {['Suleiman','Attahiru','Alpha Tee','Ahmed ']}</p>
-    <p>2*2= {multiply(2,2)}</p>
-    <p className={specialClass}>Testing class name assignment </p>
-    </>
+    // <>
+    // <h1>Welcome, I am {myName}</h1>
+    // <p>2*2 = {2*2}</p>
+    // <p>My Friends List {['Sule','Atta','ATee','A ']}</p>
+    // <p>2*2= {multiply(2,2)}</p>
+    // <p className={specialClass}>Testing class name assignment </p>
+    // </>
+
+    // example 1 map
+    // <>
+    //   {number.map((number) => (
+    //     <ul key={Math.random() *15}>
+    //       <li>{number}</li>
+    //     </ul>
+    //   ))}
+    // </>
+
+    <ul>
+    {userList}
+  </ul>
     
   );
 }
