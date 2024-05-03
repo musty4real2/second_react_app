@@ -46,3 +46,13 @@ function App() {
 }
 
 export default App;
+
+
+
+  // const dStyle= {
+  //   color:"white",
+  //   backgroundColor:"crimson",
+  //   padding:"6rem"
+  // }
+    // <h2 style={{color:dStyle.color,backgroundColor:dStyle.backgroundColor,padding:dStyle.padding}}>You have {items.length} items in your cart</h2>}
+  
