@@ -8,6 +8,9 @@ const Cart = () =>{
   }
 
   return <>
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
 <h1>Cart</h1>
 {/* {items.length > 0 &&  */}
   {/* <h2 style={{color:"white",backgroundColor:"teal",padding:"2rem"}}>You have {items.length} items in your cart</h2>
