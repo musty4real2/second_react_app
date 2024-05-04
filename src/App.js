@@ -8,7 +8,7 @@ const Cart = () =>{
   }
 
   return <>
-    <h1 className="text-3xl font-bold underline">
+    <h1 className="underline decoration-pink-500">
       Hello world!
     </h1>
 <h1>Cart</h1>
