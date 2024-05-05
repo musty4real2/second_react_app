@@ -1,6 +1,6 @@
 const Button = () =>{
   const handleClick= () =>{
-    console.log("Button Clicked");
+    alert("You Clicked Mehhhhhhhh");
   }
   return <button onClick={handleClick}>Click</button>
 }
