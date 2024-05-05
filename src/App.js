@@ -1,4 +1,5 @@
 import "./index.css";
+import { FaCartArrowDown } from "react-icons/fa";
 const Cart = () =>{
   const items=['Wireless','Power Bank',' New SSD','Hoodies'];
   const dStyle= {
@@ -18,7 +19,7 @@ const Cart = () =>{
     <h2 style={{color:dStyle.color,backgroundColor:dStyle.backgroundColor,padding:dStyle.padding}}>You have {items.length} items in your cart</h2>}
    */}
 
-{items.length > 0 && <h2>You have {items.length} items in your cart</h2>}
+{items.length > 0 && <h2>You have {items.length} items in your cart<FaCartArrowDown /></h2>}
 
   <ul>
     <h4>Products</h4>
