@@ -1,14 +1,20 @@
-const Button = () =>{
-  const handleClick= (a,b) =>{
-    console.log(a+b);
-  }
-  return <button onClick={handleClick(2,2)}>Click</button>
+const Copy = () =>{
+  const copyHandler= () =>{
+    alert('Why are you copying my content');
+  };
+  return (
+    <>
+      <p onCopy={copyHandler}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    </>
+  );
 }
 function App() {
   return (
     <>
-    <Button />
-
+    <Copy/>
     </>
   );
 }
