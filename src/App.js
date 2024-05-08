@@ -1,17 +1,14 @@
-const Movie = () =>{
-  const moveHandler= () =>{
-    console.log('You hovered over my content');
-  };
-  return (
-    <>
-      <p onMouseMove={moveHandler}>something </p>
-    </>
-  );
+const Counter =() =>{
+  return <>
+  <h1>0</h1>
+  <button>+</button>
+  <button>-</button>
+  </>
 }
 function App() {
   return (
     <>
-    <Movie/>
+  <Counter />
     </>
   );
 }
