@@ -13,12 +13,14 @@ function App() {
   const [username, setUsername] =useState(["Alex","Iwobi"]);
 
   const addOne= () =>{
-    setUsername([...username,"Musty"]);
+    setUsername([...username,"Mudassir"]);
   }
   const removeOne= () =>{
-    setUsername(username.filter(f => f !=="Alex"));
+    setUsername(username.filter((f) => f !=="Musty"));
   }
-  const updateOne= () =>{}
+  const updateOne= () =>{
+    setUsername(username.map((f)=> (f === 'Alex' ? 'Alex Smith': f)));
+  }
   return (
     <>
     {username.map((f) => (
