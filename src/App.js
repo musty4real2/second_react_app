@@ -13,7 +13,7 @@ function App() {
   // };
   
   const handleClick = () => {
-    setMovies(movies.map(m => (m.id === 1 ? { ...movies, title: "John Wick 4" } : m)));
+    setMovies(movies.map(m => (m.id === 1 ? { ...movies, title: "John Wick 4 " } : m)));
   };
   return (
     <>
