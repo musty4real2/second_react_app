@@ -20,7 +20,7 @@ function App() {
       {movies.map(movie => (
         <li key={Math.random()}>{movie.title}</li>
       ))}
-      <button onClick={handleClick}>Change Name</button>
+      <button onClick={handleClick}>Change Name ONCLICK</button>
     </>
   );
 }
